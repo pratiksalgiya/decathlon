@@ -11,23 +11,27 @@ class App extends React.Component {
         };
     }
     
-  componentWillMount(){
-    axios.get("https://jsonplaceholder.typicode.com/posts").then((response)=>{
-        console.log(response)
-            this.setState({
-                apidata:response.data
-                });
-                }
-            )
-  }
+    updateState=(obj)=>{
+      this.setState(obj);
+    }
 
-  render(){
-    return (
-      <div className="App">
-        <ListComponent apidata={this.state.apidata}></ListComponent>
-      </div>
-    );
-  }
+    componentWillMount(){
+      axios.get("https://jsonplaceholder.typicode.com/posts").then((response)=>{
+          console.log(response)
+              this.setState({
+                  apidata:response.data
+                  });
+                  }
+              )
+    }
+
+    render(){
+      return (
+        <div className="App">
+          <ListComponent updateState={this.updateState} apidata={this.state.apidata}></ListComponent>
+        </div>
+      );
+    }
   
 }
 
