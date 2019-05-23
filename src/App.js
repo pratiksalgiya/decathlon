@@ -1,5 +1,5 @@
 import React from 'react';
-import ListComponent from './Components/ListComponent';
+import ListComponent from './components/ListComponent';
 import axios from 'axios';
 import './App.css';
 
