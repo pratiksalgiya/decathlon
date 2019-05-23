@@ -1,0 +1,70 @@
+
+.mainclass{
+  padding: 5vh;
+  top: 40px;
+  position: absolute;
+  width: 100%;
+}
+
+.header{
+  text-align: center;
+  display:inline-block; 
+  box-sizing: border-box;
+  padding: 13px 20px;
+  position: fixed;
+  height: 56px;
+  width: 100%;
+  z-index: 99999;
+  background: #FFF;
+  font-size: 32px;
+}
+
+ul{
+  border: .5vh solid black;
+}
+
+button{
+  box-sizing: border-box;
+  width: 20vh;
+  font-size: 1vw;
+  border: solid black;
+  margin-left:38vh;
+}
+
+.paddingarea{
+text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+.default-view {
+  width: 50%;
+  display: inline-block;
+}
+.div-list {
+  margin-bottom: 24px;
+  padding: 16px;
+  box-shadow: 5px 10px 16px #888888;
+}
+
+button {
+    border:0;
+    padding: 1px 7px 2px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 16px;
+
+}
+textarea {
+  width: 100%;
+  font-size: inherit;
+  padding: 2px;
+}
+label {
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 16px;
+}
